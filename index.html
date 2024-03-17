@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ejercicios</h1>
+    <p><strong>Ejercicio 1:</strong></p>
+    <p>
+      Implementar un algoritmo en js que recibe 2 argumentos y los sume, el
+      resultado se deberá imprimir en pantalla.
+    </p>
+    <label for="ex1-number1">Número 1: </label>
+    <input type="number" id="ex1-number1" />
+    <br />
+    <br />
+    <label for="ex1-number2">Número 2: </label>
+    <input type="number" id="ex1-number2" />
+    <br />
+    <br />
+    <button onclick="sum()">Sumar</button>
+    <p>El resultado es: <span id="ex1-result"></span></p>
+    <hr />
+    <p><strong>Ejercicio 2:</strong></p>
+    <p>Un estudiante realiza 4 exámenes, calcular el promedio de estos</p>
+    <label for="ex2-note1">Nota del examen 1: </label>
+    <input type="number" id="ex2-note1" />
+    <br />
+    <br />
+    <label for="ex2-note2">Nota del examen 2: </label>
+    <input type="number" id="ex2-note2" />
+    <br />
+    <br />
+    <label for="ex2-note3">Nota del examen 3: </label>
+    <input type="number" id="ex2-note3" />
+    <br />
+    <br />
+    <label for="ex2-note4">Nota del examen 4: </label>
+    <input type="number" id="ex2-note4" />
+    <br />
+    <br />
+    <button onclick="average()">Calcular promedio</button>
+    <p>El promedio es: <span id="ex2-result"></span></p>
+    <hr />
+    <p><strong>Ejercicio 3:</strong></p>
+    <p>Calcular el área de un rectángulo</p>
+    <label for="ex3-base">Ingresa la base: </label>
+    <input type="number" id="ex3-base" />
+    <br />
+    <br />
+    <label for="ex3-height">Ingresa la altura:</label>
+    <input type="number" id="ex3-height" />
+    <br />
+    <br />
+    <button onclick="area()">Calcular Area</button>
+    <p>El área del rectángulo es: <span id="ex3-area"></span></p>
+    <hr />
+    <p><strong>Ejercicio 4:</strong></p>
+    <p>Calcular el área de un triángulo</p>
+    <label for="ex4-base">Ingresa la base: </label>
+    <input type="number" id="ex4-base" />
+    <br />
+    <br />
+    <label for="ex4-height">Ingresa la altura:</label>
+    <input type="number" id="ex4-height" />
+    <br />
+    <br />
+    <button onclick="areaT()">Calcular Area</button>
+    <p>El área del triángulo es : <span id="ex4-area"></span></p>
+    <hr />
+    <p><strong>Ejercicio 5:</strong></p>
+    <p>Calcular el área de una circunferencia</p>
+    <label for="ex5-radio">Ingresa el radio:</label>
+    <input type="number" id="ex5-radio" />
+    <br />
+    <br />
+    <button onclick="areaC()">Calcular Area</button>
+    <p>El área de la circunferencia es : <span id="ex5-area"></span></p>
+    <hr />
+    <p><strong>Ejercicio 6:</strong></p>
+    <p>
+      Determinar el sueldo de un trabajador basándose en sus horas trabajadas y
+      su salario de hora hombre
+    </p>
+    <label for="ex6-salary">Ingresa el salario:</label>
+    <input type="number" id="ex6-salary" />
+    <br />
+    <br />
+    <label for="ex6-hoursT">Ingresa las horas trabajadas:</label>
+    <input type="number" id="ex6-hoursT" />
+    <br />
+    <br />
+    <button onclick="salaryT()">Calcular el sueldo</button>
+    <p>El sueldo del trabajador es : <span id="ex6-salaryTotal"></span></p>
+    <hr />
+    <p><strong>Ejercicio 7:</strong></p>
+    <p>
+      Una modista, para realizar sus prendas de vestir, encarga las telas al
+      extranjero. Para cada pedido, tiene que proporcionar las medidas de la
+      tela en pulgadas, pero ella generalmente las tiene en metros. Realice un
+      algoritmo para ayudar a resolver el problema, determinando cuantas
+      pulgadas debe pedir con base en los metros que requiere(1 pulgada = 0.0254
+      m).
+    </p>
+    <label for="ex7-meter">Ingrese los metros que requiere:</label>
+    <input type="number" id="ex7-meter" />
+    <br />
+    <br />
+    <button onclick="inches()">Calcular metros a pulgadas</button>
+    <p>
+      <span id="ex7-inches"></span>
+    </p>
+    <hr />
+    <p><strong>Ejercicio 8:</strong></p>
+    <p>
+      Una empresa importadora desea determinar cuántos dólares puede adquirir
+      con equis cantidad de dinero peruano
+    </p>
+    <label for="ex8-sol">Ingrese la cantidad de soles:</label>
+    <input type="number" id="ex8-sol" />
+    <br />
+    <br />
+    <button onclick="dolar()">Calcular soles a dolares</button>
+    <p>
+      Equivale a :
+      <span id="ex8-dolar"></span>
+    </p>
+    <hr />
+    <p><strong>Ejercicio 9:</strong></p>
+    <p>
+      Una empresa que contrata personal requiere determinar la edad de las
+      personas que solicitan trabajo, pero cuando se les realiza la entrevista
+      sólo se les pregunta el año en que nacieron
+    </p>
+    <label for="ex9-date">Ingrese el año de su nacimiento:</label>
+    <input type="number" id="ex9-date" />
+    <br />
+    <br />
+    <button onclick="age()">Calcular la edad</button>
+    <p>
+      El solicitante tiene
+      <span id="ex9-age"></span>
+    </p>
+    <hr />
+    <p><strong>Ejercicio 10:</strong></p>
+    <p>
+      Se les dará un bono por antigüedad a los empleados de una tienda. Si
+      tienen un año, se les dará $100; si tienen 2 años, $200, y así
+      sucesivamente hasta los 5 años. Para los que tengan más de 5, el bono será
+      de $1000. Realice un algoritmo y represéntelo ,que permita determinar el
+      bono que recibirá un trabajador
+    </p>
+    <label for="ex10-bond">Ingrese su tiempo de antigüedad:</label>
+    <input type="number" id="ex10-bond" />
+    <br />
+    <br />
+    <button onclick="bond()">Calcular el bono</button>
+    <p>
+      <span id="ex10-bondTotal"></span>
+    </p>
+    <hr />
+    <p><strong>Ejercicio 11:</strong></p>
+    <p>
+      Un profesor tiene un salario inicial de $1500, y recibe un incremento de
+      10 % anual durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué
+      salario ha recibido en cada uno de los 6 años? Realice el algoritmo y
+      representan la solución, utilizando el ciclo apropiado
+    </p>
+    <button onclick="teacher()">Calcular</button>
+    <p id="ex11-teacher"></p>
+    <hr />
+    <p><strong>Ejercicio 12:</strong></p>
+    <p>
+      Realice un algoritmo para determinar si una persona puede votar con base
+      en su edad en las próximas elecciones
+    </p>
+    <label for="ex12-age">Ingrese su edad:</label>
+    <input type="number" id="ex12-age" />
+    <br />
+    <br />
+    <button onclick="vote()">Calcular si puede votar</button>
+    <p id="ex12-vote"></p>
+    <script src="./script.js"></script>
+  </body>
+</html>
